@@ -212,4 +212,6 @@ def kakao_callback(request):
 
 
 class UserProfileView(DetailView):
-    pass
+    
+    model = models.User
+    context_object_name = "user_obj"
